@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Wizard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="registrationForm" action="register.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="educational_qualification">Educational Qualification:</label>
+        <select id="educational_qualification" name="educational_qualification" required>
+            <option value="Abitur">Abitur</option>
+            <option value="Fachabitur">Fachabitur</option>
+            <option value="Realschule">Realschule</option>
+            <option value="Hauptschule">Hauptschule</option>
+        </select>
+        
+        <label for="industry">Industry:</label>
+        <select id="industry" name="industry" required>
+            <option value="Handel">Handel</option>
+            <option value="Industrie">Industrie</option>
+            <option value="Elektro/Elektronik">Elektro/Elektronik</option>
+            <option value="Handwerk">Handwerk</option>
+            <option value="Kaufmännisches & Verwaltung">Kaufmännisches & Verwaltung</option>
+            <option value="Bauwesen & Immobilien">Bauwesen & Immobilien</option>
+            <option value="Medizin & Pflege">Medizin & Pflege</option>
+            <option value="Finanzen & Versicherungen">Finanzen & Versicherungen</option>
+            <option value="IT & EDV">IT & EDV</option>
+            <option value="Automobil">Automobil</option>
+        </select>
+        
+        <button type="submit">Register</button>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+</html>
